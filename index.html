@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그림판</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="header-text" >
+        <h2 style="color: red;">그</h2>
+        <h2 style="color: blue;">림</h2>
+        <h2 style="color: green;">판</h2>
+    </div>
+    
+    <canvas id="draw-wrapper" width="500px" height="500px">
+    </canvas>
+    <div id="brush-size-wrapper">
+        <div id="brush-size-text">붓 크기</div>
+        <div style="width: 200px;">
+            <input id="input-range" type="range" min="1" max="5" value="1" step="1" oninput="document.getElementById('brush-size').innerHTML=this.value;">
+            <span id="brush-size">1</span>
+        </div>
+    </div>
+
+    <div id="brush-category">
+        <div>붓 모양</div>
+        <img src="./img/circle.png" alt="circle" width="20px" height="20px">
+        <img src="./img/square.png" alt="circle" width="20px" height="20px">
+    </div>
+    
+    <input type="color">
+    <img src="./img/eraser.png" alt="eraser" id="eraser">
+    <script src="index.js"></script>
+</body>
+</html>
