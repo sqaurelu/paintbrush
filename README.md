@@ -1,4 +1,6 @@
-# 그림판
+# 내가 기린 그림 - 바닐라 자바스크립트로 만든 그림판
+
+https://sqaurelu.github.io/paintbrush/
 
 ### 데스크탑
 
